@@ -42,7 +42,7 @@ Este análisis se centra en entender cómo se traduce la secuencia de splits en 
 
 
 
-El dataset sintético se genera con `make\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_classification` de scikit-learn, actuando como \*\*banco de pruebas\*\* donde cada variable está controlada para aislar estos fenómenos.
+El dataset sintético se genera con `make\_classification` de scikit-learn, actuando como \*\*banco de pruebas\*\* donde cada variable está controlada para aislar estos fenómenos.
 
 
 
@@ -66,13 +66,13 @@ El estudio utiliza `DecisionTreeClassifier` de scikit-learn como herramienta de 
 
 1\. \*\*Generación del dataset\*\*
 
-&#x20;  - 20 muestras, 2 características, 2 clases (con `make\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_classification`)
+&#x20;  - 20 muestras, 2 características, 2 clases (con `make\_classification`)
 
 
 
 2\. \*\*Entrenamiento controlado\*\*
 
-&#x20;  - Profundidad fija (`max\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_depth=4`) para observar splits
+&#x20;  - Profundidad fija (`max\_depth=4`) para observar splits
 
 &#x20;  - Criterio Gini por defecto
 
@@ -80,7 +80,7 @@ El estudio utiliza `DecisionTreeClassifier` de scikit-learn como herramienta de 
 
 3\. \*\*Inspección del árbol con scikit-learn\*\*
 
-&#x20;  - Visualización jerárquica con `plot\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_tree` mostrando:
+&#x20;  - Visualización jerárquica con `plot\_tree` mostrando:
 
 &#x20;    - Umbrales de split por nodo
 
@@ -106,7 +106,7 @@ El estudio utiliza `DecisionTreeClassifier` de scikit-learn como herramienta de 
 
 
 
-> \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*Aclaración\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*: No se realiza optimización ni ajuste de parámetros. El objetivo es observar el comportamiento \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*por defecto\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\* del algoritmo.
+\*Aclaración\*: No se realiza optimización ni ajuste de parámetros. El objetivo es observar el comportamiento \*por defecto\* del algoritmo.
 
 
 
@@ -116,9 +116,9 @@ El estudio utiliza `DecisionTreeClassifier` de scikit-learn como herramienta de 
 
 ├── requirements.txt
 
-└── README.md
+├──README.md
 
-└── .gitignore
+├──.gitignore
 
 └── LICENSE
 
@@ -150,7 +150,7 @@ Puedes instalar las dependencias con:
 
 
 
-\[`Splits\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_y\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_Fronteras\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_De\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\_Decision.ipynb`](./Splits\_y\_Fronteras\_De\_Decision.ipynb)
+\[`Splits\_y\_Fronteras\_De\_Decision.ipynb`](./Splits\_y\_Fronteras\_De\_Decision.ipynb)
 
 
 
@@ -200,5 +200,5 @@ El estudio permite observar que:
 
 
 
-> \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*Conclusión principal\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*: Un árbol de decisión construye regiones de clasificación mediante splits sucesivos sobre las variables de entrada.
+\*Conclusión principal\*: Un árbol de decisión construye regiones de clasificación mediante splits sucesivos sobre las variables de entrada.
 
